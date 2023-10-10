@@ -18,7 +18,7 @@ const __dirname = dirname(__filename);
 const app = express()
 
 app.use(cors());
-app.use(serveStatic(path.join(__dirname, 'dist'), { tryFile: '/index.html' }))
+//app.use(serveStatic(path.join(__dirname, 'dist'), { tryFile: '/index.html' }))
 
 
 app.use(bodyParser.json({limit : '50mb' }));
