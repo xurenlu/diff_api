@@ -1,0 +1,20 @@
+{
+  "name": "diffly",
+  "version": "1.0.0",
+  "description": "diff json online ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo 'no need'",
+    "start": "node ./index.mjs"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@suntower/serve-static2": "^1.15.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsondiffpatch": "^0.5.0"
+  }
+}
