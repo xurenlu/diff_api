@@ -35,7 +35,7 @@ app.post("/api/json_diff",(req,res)=>{
         }
 
     }else{
-        res.json({ok:false,error:"left and right are required"})
+        res.json({ok:false,error:"parameter [left] or [right] are required"})
     }
 })
 
