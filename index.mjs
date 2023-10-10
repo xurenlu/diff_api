@@ -23,6 +23,9 @@ app.use(serveStatic(path.join(__dirname, 'dist'), { tryFile: '/index.html' }))
 
 app.use(bodyParser.json({limit : '50mb' }));
 app.use(bodyParser.urlencoded({ extended: true }));
+app.get("/",(req,res)=>{
+    res.write("hello world")
+})
 
 app.post("/api/json_diff",(req,res)=>{
     const {left,right} = req.body;
